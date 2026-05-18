@@ -2,6 +2,11 @@
 
 This project is an educational demonstration of a **Clickjacking (UI Redressing)** attack and how to prevent it using modern web security headers.
 
+## 🌍 Live Deployments
+
+- **No CSP (Vulnerable - web-b)**: https://comsec-no-csp.vercel.app/
+- **With CSP (Protected - web-a)**: https://comsec-csp.vercel.app/
+
 It consists of two Next.js applications:
 1. **web-a (Protected Website)**: A secure application that properly implements clickjacking protections.
 2. **web-b (Vulnerable Website)**: A vulnerable application that lacks necessary security headers.
@@ -38,7 +43,7 @@ bun run dev -- -p 3001
 
 ## 🎯 How to Simulate the Attack
 
-The goal of a clickjacking attack is to trick a user into clicking a button on a hidden, invisible iframe containing the target website, while they think they are interacting with the visible decoy interface.
+The goal of a clickjacking attack is to trick a user into clicking a button on a hidden, invisible iframe containing the target website, while they think they are interacting with the visible decoy.
 
 ### Testing the Vulnerable Application (web-b)
 1. Open your browser and navigate to the simulator on the vulnerable app: `http://localhost:3000/simulator`

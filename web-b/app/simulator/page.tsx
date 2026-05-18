@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export default function SimulatorPage() {
-  const [url, setUrl] = useState("http://localhost:3000");
+  const [url, setUrl] = useState("https://comsec-csp.vercel.app/");
   const [opacity, setOpacity] = useState(0.5);
 
   return (
